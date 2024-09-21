@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Navbar from './components/navbar/Navbar';
 import { Routes, Route, useLocation, BrowserRouter } from 'react-router-dom';
-import Home from './pages/home/Home';
+import Home from './pages/services/Home';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import Portfolio from './pages/portfolio/Portfolio';

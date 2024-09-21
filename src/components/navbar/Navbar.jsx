@@ -42,7 +42,7 @@ const Navbar = () => {
       </div>
       <ul className={`menu ${showMenu ? 'active' : ''}`}>
         <li onClick={closeMenuOnMobile}>
-          <Link to='/'>Home</Link>
+          <Link to='/services'>Home</Link>
         </li>
         <li onClick={closeMenuOnMobile}>
           <Link to='/about'>About</Link>
