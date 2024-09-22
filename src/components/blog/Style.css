@@ -42,13 +42,13 @@
 }
 
 .blog_card .bg_date {
-    font-size: 14px;
+    font-size: 12px;
     color: #888;
     text-align: right;
     margin-top: 10px;
 }
 .blog_card .bg_date_time{
-    font-size: 14px;
+    font-size: 12px;
     text-align: right;
     margin-top: 3px;
     color: #888;
@@ -93,5 +93,11 @@
     }
     .blog_card .bg_paragraph p {
         font-size: 16px;
+    }
+    .blog_card .bg_date {
+        font-size: 12px;
+    }
+    .blog_card .bg_date_time{
+        font-size: 12px;
     }
 }
