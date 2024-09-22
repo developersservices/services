@@ -6,14 +6,15 @@ import { FcExternal } from 'react-icons/fc';
 import Programing from '../../components/programing/Programing';
 import Blog from '../../components/blog/Blog';
 import useDate from '../../components/hook/Date';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
   const { time, date, wish } = useDate();
   const blogs = [
     {
       id: 1,
-      Title: 'More about Web Application',
-      param: 'Web applications are software programs that run in a web browser and are accessed over the internet. These applications are typically built using web technologies such as HTML, CSS, and JavaScript...',
+      Title: '10 Secrets Every Web Developer Should Know Before Starting Their Freelancing Journey',
+      param: 'Here is a deep dive into a wealth of knowledge given in Ten things every web developer should know before going full-time freelancing It heavily focuses on aspects such as setting clear and realistic goals, developing a hard-hitting portfolio that will turn heads — all the way to working smartly, getting to your clients who are sure to give you work, being an ace at networking. Polygon photoshop model: Full Bare FrameCurbing halfway in, syllabus layout within, not flat;Although tree-edge sofabytes go byBooting from a whole sector fills up the primary frame.The efficiency that follows hype fits well with tire athleticsshutdown depends on growing new rootsIt kills resplendence ---Natasha Simone Withers May 20 · 1 min read By adhering to these tips, developers shall become competent enough to build a reputation, generate their first set of projects and sustain in the freelancing arena for good.',
       date: `${date} ${time}`,
     },
     {
@@ -32,6 +33,17 @@ const Home = () => {
 
   return (
     <>
+    <div>
+      <Helmet>
+    <title>Web Development Services</title>
+    <meta name="description" content="Expert web application development services in React.js, JavaScript, HTML5, and CSS3 for businesses and brands." />
+    <meta name="keywords" content="web development, react.js, javascript, html5, css3, web applications, responsive design, logo design" />
+    <meta property="og:title" content="Web Development Services" />
+    <meta property="og:description" content="Expert web application development services in React.js, JavaScript, HTML5, and CSS3 for businesses and brands." />
+    <meta property="og:image" content={Image} />
+    <meta property="og:url" content="https://developersservices.github.io/services/" />
+  </Helmet>
+    </div>
       <div className="home">
         <div className="bg_home">
           <div className="home_top">
@@ -47,7 +59,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <Programing />
       <div className="cards_by_blog">
         <div className="read_blogs">
