@@ -4,32 +4,10 @@ import Image from '../../Assets/file.jpg';
 import Button from '../../components/button/Button';
 import { FcExternal } from 'react-icons/fc';
 import Programing from '../../components/programing/Programing';
-import Blog from '../../components/blog/Blog';
-import useDate from '../../components/hook/Date';
 import { Helmet } from 'react-helmet';
+import Blogging from '../../components/blog/Blogging';
 
 const Home = () => {
-  const { time, date, wish } = useDate();
-  const blogs = [
-    {
-      id: 1,
-      Title: '10 Secrets Every Web Developer Should Know Before Starting Their Freelancing Journey',
-      param: 'Here is a deep dive into a wealth of knowledge given in Ten things every web developer should know before going full-time freelancing It heavily focuses on aspects such as setting clear and realistic goals, developing a hard-hitting portfolio that will turn heads — all the way to working smartly, getting to your clients who are sure to give you work, being an ace at networking. Polygon photoshop model: Full Bare FrameCurbing halfway in, syllabus layout within, not flat;Although tree-edge sofabytes go byBooting from a whole sector fills up the primary frame.The efficiency that follows hype fits well with tire athleticsshutdown depends on growing new rootsIt kills resplendence ---Natasha Simone Withers May 20 · 1 min read By adhering to these tips, developers shall become competent enough to build a reputation, generate their first set of projects and sustain in the freelancing arena for good.',
-      date: `${date} ${time}`,
-    },
-    {
-      id: 2,
-      Title: 'Understanding JavaScript ES6 Features',
-      param: 'JavaScript ES6 introduced several powerful features like arrow functions, template literals, destructuring, and more. These features made JavaScript code more concise and easier to read...',
-      date: `${date} ${time}`,
-    },
-    {
-      id: 3,
-      Title: 'What exactly does a freelancer do?',
-      param: 'Freelancers are self-employed people who work on a project-by-project basis for clients, rather than being employed by a company full-time. They are often independent contractors who work in creative, skilled, or service sectors Freelancers can work independently, or they can be represented by a company or temporary agency...',
-      date: `${date} ${time}`,
-    },
-  ];
 
   return (
     <>
@@ -64,11 +42,7 @@ const Home = () => {
         <div className="read_blogs">
           <h1>Blog</h1>
         </div>
-        <div className="card_inner_blog">
-          {blogs.map((blog) => (
-            <Blog key={blog.id} Title={blog.Title} param={blog.param} date={blog.date} />
-          ))}
-        </div>
+        <Blogging />
       </div>
     </>
   );

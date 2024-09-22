@@ -40,19 +40,34 @@ const Portfolio = () => {
           </div>
         </div>
         </div>
+          <div className="port_cards">
           <Edu
-           name='Additional experiense' 
-           heading='React Js'
-           edu='My Self'
-           date='March 2023-'
-           time='-Sept 2024'
-           />
-           <Edu 
-           heading='JavaScript'
-           edu='Academy'
-           date='Jun 2023-'
-           time='-Sept 2024'
-           />
+            className="cards"
+            name='Additional experiense' 
+            heading='React Js'
+            edu='I learn this my self online resources'
+            date='March 2023-'
+            time='-Sept 2024'
+            />
+            <Edu 
+            heading='JavaScript'
+            edu='I learn this on Academy'
+            date='Jun 2023-'
+            time='-Sept 2024'
+            />
+            <Edu 
+            heading='HTML5 - CSS3'
+            edu='I learn this on Academy'
+            date='Jun 2023-'
+            time='-Sept 2024'
+            />
+            <Edu 
+            heading='TailwindCSS'
+            edu='I learn this my self online resources'
+            date='May 2024-'
+            time='-Sept 2024'
+            />
+          </div>
     </>
   )
 }

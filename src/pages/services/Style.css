@@ -18,7 +18,7 @@
     justify-content: center;
 }
 .home .bg_home .home_top{
-    margin-top: 100px;
+    margin-top: 70px;
     position: relative;
 }
 .home .bg_home .home_top .profile_border{
@@ -48,7 +48,7 @@
     margin-top: 20px;
 }
 .cards_by_blog{
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,11 +63,14 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
+    padding: 10px 0px;
 }
 @media (max-width: 750px) {
     .bg_home{
-        height: 70vh;
+        height: 66vh;
+    }
+    .cards_by_blog{
+        margin-top: 10px;
     }
 }
 

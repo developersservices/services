@@ -9,6 +9,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { analytics } from './components/firebase/firebaseConfig';
 import { logEvent } from 'firebase/analytics';
+import Banner from './components/banner/Banner';
 
 const App = () => {
   const location = useLocation();
@@ -37,6 +38,7 @@ const App = () => {
 
   return (
     <div>
+      <Banner />
       <Navbar />
       <Routes>
         <Route path='/services' element={<Home />} />

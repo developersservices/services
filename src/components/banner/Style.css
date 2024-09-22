@@ -1,0 +1,16 @@
+.support{
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+}
+.support span{
+    color: #b5b5b5;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 3px 0px;
+    padding-right: 10px;
+}

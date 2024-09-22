@@ -22,7 +22,7 @@
     gap: 20px;
 }
 .additional_experiense .card_1{
-    height: auto;
+    height: 15vh;
     width: 100%;
     max-width: 400px;
     display: flex;
@@ -43,6 +43,9 @@
     flex-direction: column;
     gap: 5px;
     text-align: right;
+}
+.additional_experiense .card_1 .card_1_right span{
+    font-size: 13px;
 }
 @media (max-width: 768px){
     .card_heading{
