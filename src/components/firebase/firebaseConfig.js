@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 import { getAnalytics } from "firebase/analytics";
 
 // Firebase configuration
@@ -12,11 +13,7 @@ const firebaseConfig = {
   measurementId: "G-ZN6E50KRFF"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-// Initialize Google Analytics
+const db = getFirestore(app)
 const analytics = getAnalytics(app);
-
-// Export the app and analytics
-export { app, analytics };
+export { app, db, analytics };

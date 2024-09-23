@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './Style.css';
 import useDate from '../hook/Date';
+import Comments from '../comments/Comments';
 
-const Blog = ({ Title, param, date }) => {
+const Blog = ({ Title, param, date, cardId }) => {
   const { time, currentDate, wish } = useDate();
   const [showMore, setShowMore] = useState(false);
 
@@ -30,6 +31,9 @@ const Blog = ({ Title, param, date }) => {
         <div className="bg_date_time">
           <span>{wish}</span>
           <span>{currentDate}</span>
+        </div>
+        <div className="comment_bar">
+        <Comments cardId={cardId} />
         </div>
       </div>
     </div>
