@@ -1,5 +1,5 @@
-import React from 'react'
-import './Style.css'
+import React from 'react';
+import './Style.css';
 import Profile from '../../Assets/file.jpg';
 import Edu from '../../components/education/Edu';
 import Github from '../../components/github/Github';
@@ -15,61 +15,62 @@ const Portfolio = () => {
               <Github />
             </span>
             <div className="port_pro_content_paragraph">
-            <p>Welcome to my portfolio! I'm a web application developer, and this site is built using React to showcase my work. Take a look around and explore my projects!</p>
+              <p>Welcome to my portfolio! I'm a web application developer, and this site is built using React to showcase my work. Take a look around and explore my projects!</p>
             </div>
           </div>
           <div className="pro_image">
             <div className="pro_image_border">
-            <img src={Profile} alt='Profile' className='profile' data-aos="zoom-out" />
+              <img src={Profile} alt='Profile' className='profile' data-aos="zoom-out" />
             </div>
           </div>
         </div>
       </div>
 
       <div className="main_container_com">
-      <div className="expertise_content">
+        <div className="expertise_content">
           <h1>Areas of expertise</h1>
           <div className="expertise_card">
-            <span style={{marginBottom: '10px'}}>React Js</span>
+            <span style={{ marginBottom: '10px' }}>React Js</span>
             <div>
-            <span style={{marginBottom: '10px'}}>JavaScript</span>
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>TailwindCSS</span>
+              <span style={{ marginBottom: '10px' }}>JavaScript</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>TailwindCSS</span>
             </div>
           </div>
         </div>
-        </div>
-          <div className="port_cards">
-          <Edu
-            className="cards"
-            name='Additional experiense' 
-            heading='React Js'
-            edu='I learn this my self online resources'
-            date='March 2023-'
-            time='-Sept 2024'
-            />
-            <Edu 
-            heading='JavaScript'
-            edu='I learn this on Academy'
-            date='Jun 2023-'
-            time='-Sept 2024'
-            />
-            <Edu 
-            heading='HTML5 - CSS3'
-            edu='I learn this on Academy'
-            date='Jun 2023-'
-            time='-Sept 2024'
-            />
-            <Edu 
-            heading='TailwindCSS'
-            edu='I learn this my self online resources'
-            date='May 2024-'
-            time='-Sept 2024'
-            />
-          </div>
-    </>
-  )
-}
+      </div>
 
-export default Portfolio
+      <div className="port_cards">
+        <Edu
+          className="cards"
+          name='Additional experience'
+          heading='React Js'
+          edu='I learned this myself using online resources'
+          date='March 2023-'
+          time='-Sept 2024'
+        />
+        <Edu
+          heading='JavaScript'
+          edu='I learned this at the Academy'
+          date='Jun 2023-'
+          time='-Sept 2024'
+        />
+        <Edu
+          heading='HTML5 - CSS3'
+          edu='I learned this at the Academy'
+          date='Jun 2023-'
+          time='-Sept 2024'
+        />
+        <Edu
+          heading='TailwindCSS'
+          edu='I learned this myself using online resources'
+          date='May 2024-'
+          time='-Sept 2024'
+        />
+      </div>
+    </>
+  );
+};
+
+export default Portfolio;

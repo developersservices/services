@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: -90px;
+    top: -70px;
     left: 20px;
     background: #000;
     border-radius: 20px;
@@ -129,5 +129,8 @@
     }
     .port_main .port_pro_container .pro_image{
         top: 170px;
+    }
+    .port_cards .buy{
+        top: 250px;
     }
 }
