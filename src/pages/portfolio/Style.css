@@ -92,12 +92,12 @@
         height: 40vh;
         width: 93%;
         top: 80px;
-        border-radius: 30px;
+        border-radius: 20px;
         margin-left: -10px;
     }
     .port_main .port_pro_container .port_pro_content{
         padding: 5px;
-        margin-bottom: 130px;
+        margin-bottom: 110px;
     }
     .port_main .port_pro_container .port_pro_content h1{
         font-size: 35px;
@@ -128,9 +128,6 @@
         height: 150px;
     }
     .port_main .port_pro_container .pro_image{
-        top: 170px;
-    }
-    .port_cards .buy{
-        top: 250px;
+        top: 190px;
     }
 }
