@@ -47,6 +47,9 @@
 .additional_experiense .card_1 .card_1_right span{
     font-size: 13px;
 }
+.card_heading{
+    position: absolute;
+}
 @media (max-width: 768px){
     .card_heading{
         font-size: 15px;

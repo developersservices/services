@@ -3,6 +3,7 @@ import './Style.css';
 import Profile from '../../Assets/file.jpg';
 import Edu from '../../components/education/Edu';
 import Github from '../../components/github/Github';
+import Designs from '../../components/designs/Designs';
 
 const Portfolio = () => {
   return (
@@ -44,7 +45,6 @@ const Portfolio = () => {
       <div className="port_cards">
         <Edu
           className="cards"
-          name='Additional experience'
           heading='React Js'
           edu='I learned this myself using online resources'
           date='March 2023-'
@@ -67,6 +67,21 @@ const Portfolio = () => {
           edu='I learned this myself using online resources'
           date='May 2024-'
           time='-Sept 2024'
+        />
+      </div>
+
+      <div className="design_showcase">
+        <Designs 
+        card_name='Web Design'
+        param='Check my designs'
+        cata='Showcase'
+        to='/designs_showcase'
+        />
+        <Designs 
+        card_name='Logo Designing'
+        param='check my logo designing'
+        cata='Showcase'
+        to='/designs_showcase'
         />
       </div>
     </>

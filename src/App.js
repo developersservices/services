@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 import { analytics } from './components/firebase/firebaseConfig';
 import { logEvent } from 'firebase/analytics';
 import Banner from './components/banner/Banner';
+import Folder from './components/designs/designscards/Folder'
 
 const App = () => {
   const location = useLocation();
@@ -19,10 +20,10 @@ const App = () => {
     AOS.refresh();
 
     const paths = {
-      '/': { page_location: 'https://yourwebsite.com/', page_title: 'Home' },
-      '/about': { page_location: 'https://yourwebsite.com/about', page_title: 'About Us' },
-      '/contact': { page_location: 'https://yourwebsite.com/contact', page_title: 'Contact Us' },
-      '/portfolio': { page_location: 'https://yourwebsite.com/portfolio', page_title: 'Portfolio' },
+      '/': { page_location: 'https://developersservices.github.io/services/', page_title: 'Home' },
+      '/about': { page_location: 'https://developersservices.github.io/about', page_title: 'About Us' },
+      '/contact': { page_location: 'https://developersservices.github.io/contact', page_title: 'Contact Us' },
+      '/portfolio': { page_location: 'https://developersservices.github.io/portfolio', page_title: 'Portfolio' },
     };
 
     const currentPath = location.pathname;
@@ -45,6 +46,7 @@ const App = () => {
         <Route path='about' element={<About />} />
         <Route path='contact' element={<Contact />} />
         <Route path='portfolio' element={<Portfolio />} />
+        <Route path='designs_showcase' element={<Folder />} />
       </Routes>
     </div>
   );

@@ -1,37 +1,35 @@
 import React, { useState, useEffect } from 'react';
 import './Style.css';
 import { MdSend } from 'react-icons/md';
-import { db } from '../firebase/firebaseConfig'; // Import your Firestore configuration
+import { db } from '../firebase/firebaseConfig';
 import { collection, addDoc, onSnapshot, query, where } from 'firebase/firestore';
 
 const Comments = ({ cardId }) => {
     const [comment, setComment] = useState('');
     const [comments, setComments] = useState([]);
 
-    // Fetch comments only for the specific blog post (cardId)
     useEffect(() => {
-        if (!cardId) return; // Ensure cardId is present
+        if (!cardId) return;
         const commentsCollection = collection(db, 'comments');
-        const q = query(commentsCollection, where('cardId', '==', cardId)); // Query comments by cardId
+        const q = query(commentsCollection, where('cardId', '==', cardId));
         
         const unsubscribe = onSnapshot(q, (snapshot) => {
             const loadedComments = snapshot.docs.map(doc => doc.data());
-            console.log("Loaded comments for cardId:", cardId, loadedComments); // Debugging line
+            console.log("Loaded comments for cardId:", cardId, loadedComments);
             setComments(loadedComments);
         }, (error) => {
-            console.error("Error fetching comments:", error); // Error handling
+            console.error("Error fetching comments:", error); 
         });
 
-        return () => unsubscribe(); // Cleanup subscription on unmount
+        return () => unsubscribe();
     }, [cardId]);
 
-    // Add comment associated with the specific cardId
     const onClickHandler = async () => {
         if (comment.trim()) {
             await addDoc(collection(db, 'comments'), {
                 text: comment,
                 name: 'Anonymous',
-                cardId, // Associate comment with cardId (blog post)
+                cardId,
             });
             setComment('');
         }
@@ -54,7 +52,7 @@ const Comments = ({ cardId }) => {
                         value={comment}
                         onChange={onChangeHandler}
                         className='comment_input'
-                        placeholder="Write a comment..."
+                        placeholder="Share Thoughts"
                     />
                     <button className='comment_btn' onClick={onClickHandler}>
                         <MdSend />
