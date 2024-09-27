@@ -12,5 +12,11 @@
     font-size: 13px;
     font-weight: 600;
     padding: 3px 0px;
-    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.support span .icon{
+    font-size: 17px;
 }

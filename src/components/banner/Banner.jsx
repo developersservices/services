@@ -34,7 +34,7 @@ const Banner = () => {
 
   return (
     <div className="support">
-      <span><BiSolidOffer /> {offerMessage}</span>
+      <span><BiSolidOffer className='icon' /> {offerMessage}</span>
     </div>
   );
 };
